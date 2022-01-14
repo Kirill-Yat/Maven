@@ -69,7 +69,13 @@ src/main/java/com/test/Project.java
       				<configuration>
         				<outputDirectory>${basedir}/artifact
         				</outputDirectory>
+        				 <archive>
+							<manifest>
+								<mainClass>com.test.Project</mainClass>
+							</manifest>
+						</archive>
       				</configuration>
+
 			 </plugin>
                   	<plugin>
                          <groupId>org.apache.maven.plugins</groupId>
