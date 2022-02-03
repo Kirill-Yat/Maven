@@ -15,6 +15,12 @@ src/main/java/com/test/Project.java
   <version>0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>maven-simple</name>
+  					<distributionManagement>
+      					<snapshotRepository>
+        					<id>nexus</id>
+      						<url>http://192.168.31.125:8081/repository/Sample_snap/</url>
+      					</snapshotRepository>
+					</distributionManagement>
 
                 <dependencies>
                         <dependency>
@@ -71,12 +77,30 @@ src/main/java/com/test/Project.java
         				</outputDirectory>
         				 <archive>
 							<manifest>
-								<mainClass>com.test.Project</mainClass>
+								<mainClass>com.test.Project </mainClass>
 							</manifest>
 						</archive>
       				</configuration>
 
 			 </plugin>
+			 	      <plugin>
+        					<groupId>org.sonatype.plugins</groupId>
+        					<artifactId>nexus-staging-maven-plugin</artifactId>
+					        <version>1.5.1</version>
+					        <executions>
+					        	<execution>
+					        		<id>default-deploy</id>
+					        		<phase>deploy</phase>
+					        		<goals>
+					        			<goal>deploy</goal>
+					        		</goals>
+					        	</execution>
+					        </executions>
+					        <configuration>
+					            <serverId>nexus</serverId>
+					            <nexusUrl>http://192.168.31.125:8081/</nexusUrl>
+					        </configuration>
+      					</plugin>
                   	<plugin>
                          <groupId>org.apache.maven.plugins</groupId>
                          <artifactId>maven-pmd-plugin</artifactId>
