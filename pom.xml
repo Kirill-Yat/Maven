@@ -38,6 +38,7 @@ src/main/java/com/test/Project.java
 		</dependencies>
                        
 	         <build>
+		   <pluginManagement>
 		        <outputDirectory>target</outputDirectory>
 			<finalName>JarFile</finalName>
          		<sourceDirectory>src/main</sourceDirectory>
@@ -99,5 +100,6 @@ src/main/java/com/test/Project.java
                          <version>3.9.1</version>
                      </plugin>
                  </plugins>
+	       </pluginManagement>		   
              </build>
 </project>
