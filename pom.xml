@@ -15,6 +15,12 @@ src/main/java/com/test/Project.java
   <version>0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>maven-simple</name>
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<url>http://192.168.31.125:8081/repository/nexus-proxy
+		</repository>
+	</repositories>
   					<distributionManagement>
       					<snapshotRepository>
         					<id>nexus</id>
