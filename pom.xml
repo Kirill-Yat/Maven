@@ -38,7 +38,6 @@ src/main/java/com/test/Project.java
 		</dependencies>
                        
 	         <build>
-		   <pluginManagement>
 		        <outputDirectory>target</outputDirectory>
 			<finalName>JarFile</finalName>
          		<sourceDirectory>src/main</sourceDirectory>
@@ -50,8 +49,8 @@ src/main/java/com/test/Project.java
                     			</includes>
                 		</resource>
             		</resources>
+		<pluginManagement>	 
                  <plugins>
-                 	
     			<plugin>
       				<groupId>org.apache.maven.plugins</groupId>
       				<artifactId>maven-jar-plugin</artifactId>
