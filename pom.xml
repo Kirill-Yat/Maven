@@ -42,6 +42,11 @@ src/main/java/com/test/Project.java
 				<version>4.0</version>
 			</dependency>
 			<dependency>
+    				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.maven</groupId>
                                 <artifactId>maven-core</artifactId>
                                 <version>3.8.4</version>
