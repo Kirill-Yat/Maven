@@ -18,7 +18,7 @@ src/main/java/com/test/Project.java
 	<repositories>
 		<repository>
 			<id>nexus</id>
-			<url>http://192.168.31.125:8081/repository/nexus-proxy/</url>
+			<url>http://192.168.31.125:8081/repository/Sample_snap/</url>
 		</repository>
 	</repositories>
   					<distributionManagement>
